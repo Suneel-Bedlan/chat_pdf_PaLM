@@ -3,3 +3,4 @@ PyPDF2
 langchain
 google
 faiss-cpu
+google.generativeai
