@@ -45,7 +45,7 @@ def user_input(user_question):
             st.write("Bot: ", message.content)
 def main():
     st.set_page_config("Personal Agent with Multiple PDFs")
-    st.header("Chat with Multiple PDF 💬")
+    st.header("Personal Agent with Multiple PDFs 💬")
     user_question = st.text_input("Ask a Question from the PDF Files")
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
