@@ -22,6 +22,11 @@ def get_pdf_text(pdf_docs):
 def get_text_chunks(text):
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20)
     chunks = text_splitter.split_text(text)
+    
+    # Ensure chunks are not empty before returning
+    if not chunks:
+        return ['']  # Return an empty chunk if there's an issue
+    
     return chunks
 
 def get_vector_store(text_chunks):
