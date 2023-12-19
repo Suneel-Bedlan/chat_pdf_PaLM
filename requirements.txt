@@ -1,7 +1,7 @@
 langchain==0.0.284
-google.generativeai==0.2.1
-PyPDF2==1.26.0
-faiss-cpu==1.7.1
-streamlit==1.4.1
+google.generativeai
+PyPDF2
+faiss-cpu
+streamlit
 google
 
